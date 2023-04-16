@@ -1,0 +1,74 @@
+    .welcome {
+        background: #87509c;
+        header {
+            margin-bottom: 140px;
+            padding-top: 58px;
+            display: flex;
+            gap: 200px;
+            nav {
+                ul {
+                    display: flex;
+                    gap: 30px;
+                    li {
+                        list-style: none;
+                        a {
+                            font-family: 'Titillium Web', sans-serif;
+                            font-size: 16px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            color: #eeeaf0;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .h1-1 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 55px;
+            .row1 {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 42.16px;
+                font-weight: 400;
+                text-decoration: none;
+                color: #eeeaf0;
+                margin: auto;
+                max-width: 800px;
+                width: 100%;
+            }
+            .row2 {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 42.16px;
+                font-weight: 400;
+                text-decoration: none;
+                color: #eeeaf0;
+                margin: auto;
+                max-width: 890px;
+                width: 100%;
+            }
+        }
+        .button-work {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            padding-bottom: 140px;
+            .work-with-us {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+                color: #eeeaf0;
+                margin: auto;
+                max-width: 290px;
+                width: 100%;
+                background-color: #eb7d4b;
+                text-transform: uppercase;
+                border: none;
+                border-bottom: #c86a40;
+                cursor: pointer;
+                border-radius: 5px;
+                height: 65px;
+            }
+        }
+    }

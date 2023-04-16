@@ -1,0 +1,20 @@
+    footer {
+        background-color: #344b8e;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 110px;
+        border-top: 1px solid opacity($color: #7792eb);
+        padding: 0px 200px;
+        a {
+            color: #fff;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover {
+                color: #30bae7;
+                transition: ease-in 0.8ms;
+            }
+        }
+    }

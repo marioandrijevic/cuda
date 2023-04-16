@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 170px 260px 260px 260px 260px 170px;
+    gap: 20px;
+    place-items: center;
+}

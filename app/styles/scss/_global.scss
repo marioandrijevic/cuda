@@ -11,4 +11,10 @@
     grid-template-columns: 169px 260px 260px 260px 260px 168px;
     gap: 20px;
     place-items: center;
+    @media screen and (max-width: 1024px) {
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        place-items: center;
+    }
 }

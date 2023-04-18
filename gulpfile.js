@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
-const babel = require('gulp-babel');
 const plumber = require('gulp-plumber');
 
 const { series } = require('gulp');
@@ -22,17 +21,6 @@ function scss() {
         .pipe(gulp.dest('app/styles/.'));
 }
 
-// Minify JS file
-function js() {
-    return gulp
-        .src(['app/scripts/*.js'])
-        .pipe(plumber())
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(uglify())
-        .pipe(gulp.dest('js/script.js'))
-}
 
 
 
@@ -41,5 +29,4 @@ async function watch() {
 }
 
 exports.scss = scss;
-exports.js = js;
 exports.default = watch;

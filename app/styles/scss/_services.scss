@@ -2,6 +2,7 @@
     background: #17c2a4;
     display: flex;
     flex-direction: column;
+    width: 1480px;
     .services-h2 {
         margin-top: 55px;
         font-family: 'Titillium Web', sans-serif;
@@ -34,11 +35,8 @@
     .services-wrapper {
         padding-top: 80px;
         margin-bottom: 120px;
-        .services-grid {
-            display: grid;
-            grid-template-columns: 170px 260px 260px 260px 260px 170px;
-            gap: 20px;
-            place-items: center;
+        width: 1480px;
+        .grid {
             .branding {
                 display: flex;
                 flex-direction: column;

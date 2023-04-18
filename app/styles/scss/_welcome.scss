@@ -1,5 +1,6 @@
     .welcome {
         background: #87509c;
+        width: 1480px;
         header {
             margin-bottom: 140px;
             padding-top: 58px;
@@ -8,9 +9,34 @@
             nav {
                 ul {
                     display: flex;
-                    gap: 30px;
+                    gap: 40px;
+                    @media screen and (max-width: 1024px) {
+                        padding-top: 150px;
+                        position: fixed;
+                        width: 0%;
+                        right: 0;
+                        top: -30px;
+                        height: 100vh;
+                        gap: 0;
+                        flex-direction: column;
+                        background-color: #c86a40;
+                        text-align: center;
+                        transition: 0.3s;
+                        &.active {
+                            width: 100%;
+                        }
+                    }
                     li {
                         list-style: none;
+                        display: flex;
+                        justify-content: center;
+                        width: 80px;
+                        height: 40px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #643a79;
+                        }
                         a {
                             font-family: 'Titillium Web', sans-serif;
                             font-size: 16px;
@@ -18,6 +44,47 @@
                             text-decoration: none;
                             color: #eeeaf0;
                             text-transform: uppercase;
+                            border: 1px solid transparent;
+                            padding: 5px;
+                            @media screen and (max-width: 1024px) {
+                                margin: 20px;
+                                color: white;
+                                opacity: 1;
+                                &.active {
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .hamburger {
+                    display: none;
+                    cursor: pointer;
+                    &.active .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &.active .bar:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+                    &.active .bar:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                    //Tablet and mobile media scss
+                    @media screen and (max-width: 1024px) {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    .bar {
+                        display: block;
+                        width: 35px;
+                        height: 3px;
+                        margin: 5px auto;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                        background-color: #fff;
+                        &.active {
+                            background-color: #c86a40;
                         }
                     }
                 }

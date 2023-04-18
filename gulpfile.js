@@ -25,13 +25,13 @@ function scss() {
 // Minify JS file
 function js() {
     return gulp
-        .src(['src/scripts/*.js'])
+        .src(['app/scripts/*.js'])
         .pipe(plumber())
         .pipe(babel({
             presets: ['@babel/env']
         }))
         .pipe(uglify())
-        .pipe(gulp.dest('js/'))
+        .pipe(gulp.dest('js/script.js'))
 }
 
 

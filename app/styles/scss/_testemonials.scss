@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     width: 1480px;
+    @media screen and (max-width: 1024px) {
+        width: auto;
+    }
     .testemonials-h1 {
         margin-top: 55px;
         font-family: 'Titillium Web', sans-serif;
@@ -12,6 +15,11 @@
         color: #ffff;
         margin-bottom: 10px;
         text-transform: uppercase;
+        @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            margin: auto;
+            padding-top: 20px;
+        }
     }
     .line5 {
         background-color: #b73c6d;
@@ -32,10 +40,20 @@
         max-width: 440px;
         width: 100%;
         margin-bottom: 80px;
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            margin: auto;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
     }
     .testemonials-wrapper {
         margin-bottom: 120px;
         .grid {
+            @media screen and (max-width: 1024px) {
+                display: flex;
+                flex-direction: column;
+            }
             .testP {
                 margin-bottom: 20px;
                 font-size: 21px;
@@ -44,6 +62,10 @@
                 font-family: 'Titillium Web', sans-serif;
                 color: #fff;
                 width: 300px;
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                    width: 250px;
+                }
             }
             .testH2 {
                 font-size: 24px;
@@ -52,6 +74,9 @@
                 text-transform: uppercase;
                 color: #fff;
                 margin: 0;
+                @media screen and (max-width: 1024px) {
+                    font-size: 20px;
+                }
             }
             .testSpanWrap {
                 font-size: 18px;
@@ -60,6 +85,9 @@
                 text-transform: capitalize;
                 color: #ffdd99;
                 margin: 0;
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                }
             }
             .picture-test {
                 background: #787878;
@@ -68,6 +96,11 @@
                 border-radius: 50%;
                 padding: 0;
                 margin: 0;
+                @media screen and (max-width: 1024px) {
+                    width: 70px;
+                    height: 70px;
+                    align-items: center;
+                }
             }
             .iman {
                 grid-column: 2/4;
@@ -75,6 +108,10 @@
                 gap: 40px;
                 flex-direction: row;
                 margin-bottom: 140px;
+                @media screen and (max-width: 1024px) {
+                    margin-bottom: 70px;
+                    align-items: center;
+                }
                 .iman-wrapper {
                     display: flex;
                     flex-direction: column;
@@ -86,6 +123,10 @@
                 gap: 40px;
                 flex-direction: row;
                 margin-bottom: 140px;
+                @media screen and (max-width: 1024px) {
+                    margin-bottom: 70px;
+                    align-items: center;
+                }
                 .adriana-wrapper {
                     display: flex;
                     flex-direction: column;
@@ -96,6 +137,10 @@
                 display: flex;
                 gap: 40px;
                 flex-direction: row;
+                @media screen and (max-width: 1024px) {
+                    margin-bottom: 70px;
+                    align-items: center;
+                }
                 .anne-wrapper {
                     display: flex;
                     flex-direction: column;
@@ -106,6 +151,10 @@
                 display: flex;
                 gap: 40px;
                 flex-direction: row;
+                @media screen and (max-width: 1024px) {
+                    margin-bottom: 70px;
+                    align-items: center;
+                }
                 .emma-wrapper {
                     display: flex;
                     flex-direction: column;

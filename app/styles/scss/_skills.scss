@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     width: 1480px;
+    @media screen and (max-width: 1024px) {
+        width: auto;
+    }
     .skills-h1 {
         margin-top: 55px;
         font-family: 'Titillium Web', sans-serif;
@@ -12,6 +15,11 @@
         color: #3c4761;
         margin-bottom: 10px;
         text-transform: uppercase;
+        @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            margin: auto;
+            padding-top: 20px;
+        }
     }
     .line3 {
         background-color: #c8d9e5;
@@ -33,6 +41,12 @@
         max-width: 440px;
         width: 100%;
         margin-bottom: 80px;
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            margin: auto;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
     }
     .skills-wrapper {
         .grid {
@@ -40,6 +54,9 @@
                 grid-column: 2/3;
                 display: flex;
                 flex-direction: column;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 1;
+                }
                 .web-bar {
                     background: radial-gradient(closest-side, #ffffff 79%, transparent 80% 100%), conic-gradient(#30bae7 90%, #dfe8ed 0);
                     &::before {
@@ -50,6 +67,9 @@
                         text-align: center;
                         color: #3c4761;
                         display: flex;
+                        @media screen and (max-width: 1024px) {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -57,6 +77,9 @@
                 grid-column: 3/4;
                 display: flex;
                 flex-direction: column;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 2;
+                }
                 .html-bar {
                     background: radial-gradient(closest-side, #ffffff 79%, transparent 80% 100%), conic-gradient(#d74680 75%, #dfe8ed 0);
                     &::before {
@@ -67,6 +90,9 @@
                         text-align: center;
                         color: #3c4761;
                         display: flex;
+                        @media screen and (max-width: 1024px) {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -74,6 +100,9 @@
                 grid-column: 4/5;
                 display: flex;
                 flex-direction: column;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 1;
+                }
                 .graphic-bar {
                     background: radial-gradient(closest-side, #ffffff 79%, transparent 80% 100%), conic-gradient(#15c7a8 70%, #dfe8ed 0);
                     &::before {
@@ -84,6 +113,9 @@
                         text-align: center;
                         color: #3c4761;
                         display: flex;
+                        @media screen and (max-width: 1024px) {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -91,6 +123,9 @@
                 grid-column: 5/6;
                 display: flex;
                 flex-direction: column;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 2;
+                }
                 .ui-bar {
                     background: radial-gradient(closest-side, #ffffff 79%, transparent 80% 100%), conic-gradient(#eb7d4b 85%, #dfe8ed 0);
                     &::before {
@@ -101,6 +136,9 @@
                         text-align: center;
                         color: #3c4761;
                         display: flex;
+                        @media screen and (max-width: 1024px) {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
@@ -117,6 +155,10 @@
                 width: 160px;
                 height: 160px;
                 border-radius: 50%;
+                @media screen and (max-width: 1024px) {
+                    width: 70px;
+                    height: 70px;
+                }
             }
             .skills-h2 {
                 margin-top: 20px;
@@ -128,6 +170,10 @@
                 color: #3c4761;
                 display: flex;
                 text-transform: uppercase;
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }

@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     width: 1480px;
+    @media screen and (max-width: 1024px) {
+        width: auto;
+    }
     .team-h1 {
         margin-top: 55px;
         font-family: 'Titillium Web', sans-serif;
@@ -11,6 +14,11 @@
         text-decoration: none;
         color: #3c4761;
         margin-bottom: 10px;
+        @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            margin: auto;
+            padding-top: 20px;
+        }
     }
     .line2 {
         background-color: #c8d9e5;
@@ -29,6 +37,11 @@
         align-items: center;
         text-align: center;
         margin-bottom: 25px;
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            margin: auto;
+            padding: 0 20px;
+        }
     }
     .team-wrapper {
         display: block;
@@ -42,38 +55,70 @@
                 height: 220px;
                 border-radius: 50%;
                 margin-bottom: 30px;
+                @media screen and (max-width: 1024px) {
+                    width: 110px;
+                    height: 110px;
+                }
             }
             .anne {
                 display: flex;
                 flex-direction: column;
                 grid-column: 2/3;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 1;
+                }
             }
             .kate {
                 display: flex;
                 flex-direction: column;
                 grid: 3/4;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 2;
+                }
             }
             .olivia {
                 display: flex;
                 flex-direction: column;
                 grid: 4/5;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 1;
+                }
             }
             .ashley {
                 display: flex;
                 flex-direction: column;
                 grid: 5/6;
+                @media screen and (max-width: 1024px) {
+                    grid-column: 2;
+                }
             }
             .team-h2 {
                 color: #27283d;
                 margin-bottom: 10px;
+                font-size: 24px;
+                font-family: 'Titillium Web', sans-serif;
+                font-weight: 400;
+                text-decoration: none;
+                @media screen and (max-width: 1024px) {
+                    width: 110px;
+                    height: 110px;
+                    font-size: 20px;
+                    text-align: center;
+                }
             }
             .team-span {
                 color: #30bae7;
                 margin-bottom: 20px;
             }
             .team-p2 {
+                font-family: 'Titillium Web', sans-serif;
+                font-weight: 400;
+                text-decoration: none;
                 margin-bottom: 25px;
                 padding: 0 20px;
+                @media screen and (max-width: 1024px) {
+                    text-align: center;
+                }
             }
             .contact-wrapper {
                 gap: 12px;
